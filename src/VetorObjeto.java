@@ -4,9 +4,9 @@ public class VetorObjeto {
     public Object[] elementos;
     public int tamanho;
 
-    public VetorObjeto(Object[] elementos, int tamanho) {
-        this.elementos = elementos;
-        this.tamanho = tamanho;
+    public VetorObjeto(int capacidade) {
+        this.elementos = new Object[capacidade];
+        this.tamanho = 0;
     }
 
     @Override
